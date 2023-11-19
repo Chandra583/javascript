@@ -39,7 +39,7 @@
 // let isJsHard = "false";
 // console.log(isJsHard.split(""));
 
-let favActorLastName = "FA.";
+// let favActorLastName = "FA.";
 // let favActorFristName = "Chandra";
 // let fullName = favActorLastName.concat(favActorFristName);
 // let uppercase = fullName.toUpperCase();
