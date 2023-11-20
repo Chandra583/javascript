@@ -1,177 +1,253 @@
-let pass = prompt("please enter your passwordd");
-//convert pass variable in sring to number
-let passWord = parseInt(pass);
-if (passWord === 124) {
-  console.log("Password is correct");
-} else if (passWord <= 124) {
-  console.log("Password is short");
-} else if (passWord >= 124) {
-  console.log("Password is long");
-} else {
-  console.log("Error in password");
-}
+// let pass = prompt("please enter your passwordd");
+// //convert pass variable in sring to number
+// let passWord = parseInt(pass);
+// if (passWord === 124) {
+//   console.log("Password is correct");
+// } else if (passWord <= 124) {
+//   console.log("Password is short");
+// } else if (passWord >= 124) {
+//   console.log("Password is long");
+// } else {
+//   console.log("Error in password");
+// }
 
-let x = prompt("to what do to");
-let y = parseInt(x);
+// let x = prompt("to what do to");
+// let y = parseInt(x);
 
-switch (y) {
-  case 0:
-    {
-      alert("on");
-    }
-    break;
-  case 1:
-    {
-      alert("off");
-    }
-    break;
-  default: {
-    alert("error");
-  }
-}
+// switch (y) {
+//   case 0:
+//     {
+//       alert("on");
+//     }
+//     break;
+//   case 1:
+//     {
+//       alert("off");
+//     }
+//     break;
+//   default: {
+//     alert("error");
+//   }
+// }
 
-swith casessss
+// swith casessss
 
-let fruit = prompt("Enter your day fruit name ");
-switch (fruit) {
-  case "Banana":
-    console.log("Banana is good ");
-    break;
-  case "Orange":
-    console.log("I'm not fan of Orange");
-    break;
-  case "apple":
-    console.log("one apple keeps you away from doctor hahaha");
-    break;
-  default:
-    console.log("Sorry!! i never heard of that fruit");
-}
+// let fruit = prompt("Enter your day fruit name ");
+// switch (fruit) {
+//   case "Banana":
+//     console.log("Banana is good ");
+//     break;
+//   case "Orange":
+//     console.log("I'm not fan of Orange");
+//     break;
+//   case "apple":
+//     console.log("one apple keeps you away from doctor hahaha");
+//     break;
+//   default:
+//     console.log("Sorry!! i never heard of that fruit");
+// }
 
-for (let i = 1; i <= 1000; i++) {
-  console.log("Happy birthday to me", i);
-}
+// for (let i = 1; i <= 1000; i++) {
+//   console.log("Happy birthday to me", i);
+// }
 
-Arraays
-let favSingers = ["Honey", "singh", "arjith"];
-console.log(favSingers[0]);
-let favNumb = [54, 55, 89, 18];
-let mixedArr = ["str", ["other", "jsj"], 123, false];
-console.log(mixedArr[1][1]);
+// Arraays
+// let favSingers = ["Honey", "singh", "arjith"];
+// console.log(favSingers[0]);
+// let favNumb = [54, 55, 89, 18];
+// let mixedArr = ["str", ["other", "jsj"], 123, false];
+// console.log(mixedArr[1][1]);
 
-object
+// object
 
-const car = {
-  type: "mahindra",
-  model: 2023,
-  color: "red",
-};
-console.log(typeof car);
+// const car = {
+//   type: "mahindra",
+//   model: 2023,
+//   color: "red",
+// };
+// console.log(typeof car);
 
-car.type = "Toyota";
-car.wheels = 4;
-console.log(car);
+// car.type = "Toyota";
+// car.wheels = 4;
+// console.log(car);
 
-let Name = "Vignesh sir";
-function sayHello(Name) {
-  console.log(`hello ${Name}`);
-}
 // let Name = "Vignesh sir";
+// function sayHello(Name) {
+//   console.log(`hello ${Name}`);
+// }
+// // let Name = "Vignesh sir";
 
-sayHello("vignesh");
-sayHello("viggu");
-sayHello("ganesh");
+// sayHello("vignesh");
+// sayHello("viggu");
+// sayHello("ganesh");
 
-//retun keyword in function
-function addNumber() {
-  return 6 + 7;
-}
-console.log(addNumber());
+// //retun keyword in function
+// function addNumber() {
+//   return 6 + 7;
+// }
+// console.log(addNumber());
 
-function myFun(a, b
+// function myFun(a, b
 
-function birthday(Name, dob) {
-  console.log(`my name is ${Name}`);
-}
-function dob() {
-  console.log("And my birthaday in 11/8/2000");
-}
+// function birthday(Name, dob) {
+//   console.log(`my name is ${Name}`);
+// }
+// function dob() {
+//   console.log("And my birthaday in 11/8/2000");
+// }
 
-birthday("Vignesh", dob());
+// birthday("Vignesh", dob());
 
-function showCallfunc(fn) {
-  let value = 25;
-  fn(value);
-}
+// function showCallfunc(fn) {
+//   let value = 25;
+//   fn(value);
+// }
 
-showCallfunc(function (value) {
-  console.log(value * 2);
-});
+// showCallfunc(function (value) {
+//   console.log(value * 2);
+// });
 
-function greet(name, cb, ls) {
-  console.log(`hi my name ${name}`);
-  cb();
-  ls();
-}
+// function greet(name, cb, ls) {
+//   console.log(`hi my name ${name}`);
+//   cb();
+//   ls();
+// }
 
-function callme() {
-  console.log("I am a call back function");
-}
-function secoundCallme() {
-  console.log("I am second call back function");
-}
+// function callme() {
+//   console.log("I am a call back function");
+// }
+// function secoundCallme() {
+//   console.log("I am second call back function");
+// }
 
-greet("Vignesh", callme, secoundCallme);
+// greet("Vignesh", callme, secoundCallme);
 
-function showCallfunc(fn) {
-  let value = 10;
-  fn(value);
-}
-showCallfunc(function (value) {
-  console.log(value * 3);
-});
+// function showCallfunc(fn) {
+//   let value = 10;
+//   fn(value);
+// }
+// showCallfunc(function (value) {
+//   console.log(value * 3);
+// });
 
-const oldSeason = (year) => {
-  console.log(`Welocome to New season of ${year} :)`);
+// const oldSeason = (year) => {
+//   console.log(`Welocome to New season of ${year} :)`);
+// };
+// oldSeason(2023);
+
+// const greet = (name) => {
+//   return `Hello World ${name}`;
+// };
+// console.log(greet("vignesh"));
+
+// const add = (x, y, z) => {
+//   return x + y + z;
+// };
+// console.log(add(4, 6, 8));
+
+// function student(name, ID, year, section) {
+//   return { name, ID, year, section };
+// }
+// console.log(student("chandra", "Bsc19009", 2, "c"));
+
+// const a = 1;
+// const b = 2;
+// const c = 3;
+
+// const obj = {
+//   a,
+//   b,
+//   c,
+// };
+
+// console.log(obj);
+
+// const lib = {
+//   //   sum: (a, b) => a + b,
+//   //   mult: (a, b) => a * b,
+//   sum: (a, b) => {
+//     return a + b;
+//   },
+//   mult: (a, b) => {
+//     return a ** b;
+//   },
+// };
+
+// console.log(lib.sum(5, 6));
+// console.log(lib.mult(5, 6));
+
+//default function parameter in javascrript
+
+// function ctn5(count = true) {
+//   //this is the default function parameter where we assing a default value for parameter becouse of if any arguments are not given so then excute this deafut parameter
+//   if (count === true) {
+//     for (let i = 0; i <= 5; i++) {
+//       console.log(`${i} is the number`);
+//     }
+//   } else {
+//     console.log("invalid");
+//   }
+// }
+
+// ctn5();
+
+// function multiply(a, b = 1) {
+//   let result = a * b;
+//   console.log(`the product of ${a} and ${b}  is = ${result}`);
+// }
+// multiply(2, 5);
+
+//Spread operation/operators.
+//this for function
+// function paint(a, b, c, d, e) {
+//   console.log(`a = ${a}`);
+//   console.log(`b = ${b}`);
+//   console.log(`c = ${c}`);
+//   console.log(`d = ${d}`);
+//   console.log(`e = ${e}`);
+// }
+
+// let color = ["red", "green", "blue", "yellow", "darkblue"];
+// //intsea  of giving all as argument creating variable and use spread operator using ""..."" it helps to well readable function
+// paint(...color);
+
+// //this for arrays
+// const arr1 = [1, 3, 4];
+// const arr2 = [5, 6, 8];
+// const addTwoArrys = [...arr1, ...arr2];
+
+// console.log(addTwoArrys);
+// console.log(addTwoArrys.length);
+// console.log(typeof addTwoArrys);
+
+// const ppl = ["Chandra", "shekar", "ks", "muni"];
+// const ppls = [...ppl, "mandi", "manoja"];
+// console.log(ppls);
+
+//for object
+
+// let ob1 = {
+//   name1: "chandra",
+//   rollno1: "BSc19009",
+// };
+// let ob2 = {
+//   name2: "shekar",
+//   rollno2: "BSc9009",
+// };
+
+// let obj3 = { ...ob1, ...ob2 };
+// console.log(obj3);
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5];
+
+const clone1 = [...arr1, ...arr2];
+console.log(clone1);
+
+const user = {
+  name1: "chandra",
+  rollno1: "BSc19009",
 };
-oldSeason(2023);
-
-const greet = (name) => {
-  return `Hello World ${name}`;
-};
-console.log(greet("vignesh"));
-
-const add = (x, y, z) => {
-  return x + y + z;
-};
-console.log(add(4, 6, 8));
-
-function student(name, ID, year, section) {
-  return { name, ID, year, section };
-}
-console.log(student("chandra", "Bsc19009", 2, "c"));
-
-const a = 1;
-const b = 2;
-const c = 3;
-
-const obj = {
-  a,
-  b,
-  c,
-};
-
-console.log(obj);
-
-const lib = {
-  //   sum: (a, b) => a + b,
-  //   mult: (a, b) => a * b,
-  sum: (a, b) => {
-    return a + b;
-  },
-  mult: (a, b) => {
-    return a ** b;
-  },
-};
-
-console.log(lib.sum(5, 6));
-console.log(lib.mult(5, 6));
+const clone2 = { ...user };
+console.log(clone2);
+console.log(user);
