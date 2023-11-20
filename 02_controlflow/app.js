@@ -238,16 +238,113 @@
 // let obj3 = { ...ob1, ...ob2 };
 // console.log(obj3);
 
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5];
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5];
 
-const clone1 = [...arr1, ...arr2];
-console.log(clone1);
+// const clone1 = [...arr1, ...arr2];
+// console.log(clone1);
 
-const user = {
-  name1: "chandra",
-  rollno1: "BSc19009",
+// const user = {
+//   name1: "chandra",
+//   rollno1: "BSc19009",
+// };
+// const clone2 = { ...user };
+// console.log(clone2);
+// console.log(user);
+
+//Rest operotor
+//rest operotor means taking unlimited amount of  argumnets when function calling and return as an arrays
+
+// function chandra(...myFrinds) {
+//   // console.log(`My frist name is : ${fristName}`);
+//   // console.log(`My lasr name is : ${lastName}`);
+//   // console.log(`My friends are : ${myFrinds}`);
+//   console.log("frinds:", myFrinds);
+// }
+
+// chandra(
+//   "chandra",
+//   "sharma",
+//   "shekhar",
+//   "Manoj",
+//   "muniyamma",
+//   "mandi",
+//   "chethu",
+//   {
+//     name: "pradeep",
+//     class: "4",
+//     age: 28,
+//   },
+//   [45, true, "charana"]
+// );
+
+//Destructing
+//destucturing is a way to extract values from arrays or objects into distinct variables
+
+//Destructing with arrays
+
+//take one arrays
+// const name = ["chandra", "shekar", "ks", "hnp"];
+
+// //taking array values and making new variable and number arrays == number of variable name should be in keytword
+// const [fristName, lastName, initial, village] = name;
+// console.log(`My frist name is : ${fristName}`);
+// console.log(`My last name is : ${lastName}`);
+// console.log(`Initial is : ${initial}`);
+// console.log(`Village is : ${village}`);
+
+// //defaul paraneter we can do in destructing
+// let a, b;
+// [a = 10, b = 20] = ["chandra", "New VAlue"];
+// console.log("a", a, "b", b);
+
+//destructing function
+
+// function getDetails() {
+//   return ["chandra", "shekar"];
+// }
+
+// const [fristname, lastname] = getDetails();
+// console.log(`Frist Name :${fristname}, Last Name :${lastname}`);
+
+// function ad() {
+//   return [1, 2];
+// }
+
+// const [x, y] = ad();
+// console.log(x + y);
+
+const [color1, color2, ...color3] = [
+  "red",
+  "green",
+  "blue",
+  "yellow",
+  "orange",
+];
+
+// const [color1, color2, color3] = color;
+console.log("color1 is ", color1);
+console.log("color2 is ", color2);
+console.log("color3 is ", color3);
+
+//object destructing
+const person = {
+  name: "chandra",
+  age: 25,
+  gender: "male",
+  city: "Bangalore",
 };
-const clone2 = { ...user };
-console.log(clone2);
-console.log(user);
+const { name, age, city, gender } = person;
+console.log(`my name is ${name} and i am ${age} years old`);
+console.log(`i live in ${city}`);
+console.log(gender);
+
+//object destructing with rest operotors
+
+const { a, b, ...c } = { a: 100, b: 200, c: 550, f: 55, g: 57 };
+console.log("a", a, "b", b, c);
+
+//Arrays destructing with rest operotors
+const [x, y, ...z] = ["a", "b", "c", "d", "e", "f"];
+console.log(x, y, z);
+// console.log("a", a, "b", b, c);
