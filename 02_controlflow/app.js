@@ -314,37 +314,65 @@
 // const [x, y] = ad();
 // console.log(x + y);
 
-const [color1, color2, ...color3] = [
-  "red",
-  "green",
-  "blue",
-  "yellow",
-  "orange",
-];
+// const [color1, color2, ...color3] = [
+//   "red",
+//   "green",
+//   "blue",
+//   "yellow",
+//   "orange",
+// ];
 
-// const [color1, color2, color3] = color;
-console.log("color1 is ", color1);
-console.log("color2 is ", color2);
-console.log("color3 is ", color3);
+// // const [color1, color2, color3] = color;
+// console.log("color1 is ", color1);
+// console.log("color2 is ", color2);
+// console.log("color3 is ", color3);
 
-//object destructing
-const person = {
-  name: "chandra",
-  age: 25,
-  gender: "male",
-  city: "Bangalore",
-};
-const { name, age, city, gender } = person;
-console.log(`my name is ${name} and i am ${age} years old`);
-console.log(`i live in ${city}`);
-console.log(gender);
+// //object destructing
+// const person = {
+//   name: "chandra",
+//   age: 25,
+//   gender: "male",
+//   city: "Bangalore",
+// };
+// const { name, age, city, gender } = person;
+// console.log(`my name is ${name} and i am ${age} years old`);
+// console.log(`i live in ${city}`);
+// console.log(gender);
 
-//object destructing with rest operotors
+// //object destructing with rest operotors
 
-const { a, b, ...c } = { a: 100, b: 200, c: 550, f: 55, g: 57 };
-console.log("a", a, "b", b, c);
-
-//Arrays destructing with rest operotors
-const [x, y, ...z] = ["a", "b", "c", "d", "e", "f"];
-console.log(x, y, z);
+// const { a, b, ...c } = { a: 100, b: 200, c: 550, f: 55, g: 57 };
 // console.log("a", a, "b", b, c);
+
+// //Arrays destructing with rest operotors
+// const [x, y, ...z] = ["a", "b", "c", "d", "e", "f"];
+// console.log(x, y, z);
+// // console.log("a", a, "b", b, c);
+
+let student = {
+  name: "Atul",
+  age: 54,
+  address: { homeName: "jai bhavini", concatnumber: 455 },
+  village: "varanasi",
+};
+
+function std({ name, age, address, village }) {
+  console.log("name is", name);
+  console.log("age is", age);
+  console.log("address is", address);
+  console.log("village is", village);
+}
+
+std(student);
+
+let opt = {
+  title: "My menu",
+  item: ["item1", "item2"],
+};
+function showMenu({ title, item: [item1, item2], item }) {
+  console.log(title);
+  console.log(item);
+  console.log(item1);
+  console.log(item2);
+}
+showMenu(opt);
