@@ -372,7 +372,5 @@ let opt = {
 function showMenu({ title, item: [item1, item2], item }) {
   console.log(title);
   console.log(item);
-  console.log(item1);
-  console.log(item2);
 }
 showMenu(opt);
