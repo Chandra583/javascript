@@ -349,28 +349,35 @@
 // console.log(x, y, z);
 // // console.log("a", a, "b", b, c);
 
-let student = {
-  name: "Atul",
-  age: 54,
-  address: { homeName: "jai bhavini", concatnumber: 455 },
-  village: "varanasi",
-};
+// let student = {
+//   name: "Atul",
+//   age: 54,
+//   address: { homeName: "jai bhavini", concatnumber: 455 },
+//   village: "varanasi",
+// };
 
-function std({ name, age, address, village }) {
-  console.log("name is", name);
-  console.log("age is", age);
-  console.log("address is", address);
-  console.log("village is", village);
-}
+// function std({ name, age, address, village }) {
+//   console.log("name is", name);
+//   console.log("age is", age);
+//   console.log("address is", address);
+//   console.log("village is", village);
+// }
 
-std(student);
+// std(student);
 
-let opt = {
-  title: "My menu",
-  item: ["item1", "item2"],
-};
-function showMenu({ title, item: [item1, item2], item }) {
-  console.log(title);
-  console.log(item);
-}
-showMenu(opt);
+// let opt = {
+//   title: "My menu",
+//   item: ["item1", "item2"],
+// };
+// function showMenu({ title, item: [item1, item2], item }) {
+//   console.log(title);
+//   console.log(item);
+// }
+// showMenu(opt);
+
+let pass = prompt("Enter you password");
+let passWord = parseInt(pass);
+
+passWord === 1254
+  ? alert("Your pass word is correct")
+  : alert("please eneter correct password");
