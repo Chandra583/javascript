@@ -375,9 +375,31 @@
 // }
 // showMenu(opt);
 
-let pass = prompt("Enter you password");
-let passWord = parseInt(pass);
+// let pass = prompt("Enter you password");
+// let passWord = parseInt(pass);
 
-passWord === 1254
-  ? alert("Your pass word is correct")
-  : alert("please eneter correct password");
+// passWord === 1254
+//   ? alert("Your pass word is correct")
+//   : alert("please eneter correct password");
+
+// let age = parseInt(prompt("please eneter age"));
+
+// const isAdult = age >= 18 ? "your an adult" : "not an adult";
+// console.log(isAdult);
+
+let student = {
+  name: "Atul",
+  age: 54,
+  address: { homeName: "jai bhavini", concatnumber: 455 },
+  village: "varanasi",
+};
+
+for (let x in student) {
+  console.log(x, student[x]);
+}
+
+const obj = { a: 1, b: 2, c: 3 };
+
+for (let i in obj) {
+  console.log(`${i} = ${obj[i]}`);
+}
