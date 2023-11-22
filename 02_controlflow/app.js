@@ -386,20 +386,72 @@
 
 // const isAdult = age >= 18 ? "your an adult" : "not an adult";
 // console.log(isAdult);
+//fro in looop
+// let student = ["a", 4, "as", "g"];
 
-let student = {
-  name: "Atul",
-  age: 54,
-  address: { homeName: "jai bhavini", concatnumber: 455 },
-  village: "varanasi",
-};
+// // // for (let x in student) {
+// //   console.log(x, student[x]);
+// // }
 
-for (let x in student) {
-  console.log(x, student[x]);
-}
+// const obj = { a: 1, b: 2, c: 3 };
 
-const obj = { a: 1, b: 2, c: 3 };
+// for (let i in obj) {
+//   console.log(`${i} = ${obj[i]}`);
+// }
 
-for (let i in obj) {
-  console.log(`${i} = ${obj[i]}`);
-}
+//for of loop
+// const arr1 = ["a", 4, "as", "g"];
+
+// for (let x of arr1) {
+//   console.log(x);
+// }
+
+// const words = ["hello", "bird ", "table", "footnbale"];
+
+// const capWords = words.forEach((word, index, arr) => {
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// });
+
+// console.log(words);
+
+let ppl = [
+  { fname: "chandra", lname: "shekar" },
+  { fname: "andra", lname: "kar" },
+  { fname: "dravid", lname: "karan" },
+];
+
+const outPut = ppl.map((person) => {
+  return [person.fname, person.lname];
+});
+console.log(outPut);
+
+const arr = [1, 2, 6, 4, 8];
+
+const mult = arr.map((num) => {
+  return num * 10;
+});
+console.log(mult);
+
+const names = [
+  {
+    name: "Chandra Shekhar",
+    age: 25,
+    address: {
+      village: "Kotiganahosur",
+      contact_no: 5896741233,
+    },
+  },
+  {
+    name: " Shekhar",
+    age: 24,
+    address: {
+      village: "hosur",
+      contact_no: 6741233,
+    },
+  },
+];
+
+const res = names.map((here) => {
+  return [here.name, here.age, here.address];
+});
+console.log(res);
