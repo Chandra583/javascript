@@ -414,44 +414,82 @@
 
 // console.log(words);
 
-let ppl = [
-  { fname: "chandra", lname: "shekar" },
-  { fname: "andra", lname: "kar" },
-  { fname: "dravid", lname: "karan" },
+// let ppl = [
+//   { fname: "chandra", lname: "shekar" },
+//   { fname: "andra", lname: "kar" },
+//   { fname: "dravid", lname: "karan" },
+// ];
+
+// const outPut = ppl.map((person) => {
+//   return [person.fname, person.lname];
+// });
+// console.log(outPut);
+
+// const arr = [1, 2, 6, 4, 8];
+
+// const mult = arr.map((num) => {
+//   return num * 10;
+// });
+// console.log(mult);
+
+// const names = [
+//   {
+//     name: "Chandra Shekhar",
+//     age: 25,
+//     address: {
+//       village: "Kotiganahosur",
+//       contact_no: 5896741233,
+//     },
+//   },
+//   {
+//     name: " Shekhar",
+//     age: 24,
+//     address: {
+//       village: "hosur",
+//       contact_no: 6741233,
+//     },
+//   },
+// ];
+
+// const res = names.map((here) => {
+//   return [here.name, here.age, here.address];
+// });
+// console.log(res);
+
+//filter methodasss
+// const numbers = [32, 22, 16, 55, 12, 11];
+
+// function adult(number) {
+//   return number > 18;
+// }
+
+// const res = numbers.filter(adult);
+// console.log(res);
+
+// const words = [
+//   "sparty",
+//   "limit",
+//   "elite",
+//   "exuberant",
+//   "destruction",
+//   "present",
+// ];
+
+// function longWords(word) {
+//   return word.length > 2;
+// }
+// const res1 = words.filter(longWords);
+// console.log(res1);
+
+//
+
+let products = [
+  { name: "Checkers", category: "toys" },
+  { name: "HArry potter", category: "Books" },
+  { name: "iphone", category: "Elec" },
+  { name: "Learn php", category: "Books" },
 ];
 
-const outPut = ppl.map((person) => {
-  return [person.fname, person.lname];
-});
-console.log(outPut);
+const product = products.filter((product) => product.category === "Books");
 
-const arr = [1, 2, 6, 4, 8];
-
-const mult = arr.map((num) => {
-  return num * 10;
-});
-console.log(mult);
-
-const names = [
-  {
-    name: "Chandra Shekhar",
-    age: 25,
-    address: {
-      village: "Kotiganahosur",
-      contact_no: 5896741233,
-    },
-  },
-  {
-    name: " Shekhar",
-    age: 24,
-    address: {
-      village: "hosur",
-      contact_no: 6741233,
-    },
-  },
-];
-
-const res = names.map((here) => {
-  return [here.name, here.age, here.address];
-});
-console.log(res);
+console.log(product);
