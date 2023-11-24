@@ -466,20 +466,20 @@
 // const res = numbers.filter(adult);
 // console.log(res);
 
-// const words = [
-//   "sparty",
-//   "limit",
-//   "elite",
-//   "exuberant",
-//   "destruction",
-//   "present",
-// ];
+const words = [
+  "sparty",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
 
-// function longWords(word) {
-//   return word.length > 2;
-// }
-// const res1 = words.filter(longWords);
-// console.log(res1);
+function longWords(word) {
+  return word.length > 2;
+}
+const res1 = words.filter(longWords);
+console.log(res1);
 
 //
 
